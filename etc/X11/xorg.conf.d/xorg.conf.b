@@ -5,3 +5,9 @@ Section "Device"
     Option	"TearFree"	"true"
 EndSection
 
+#Section "InputClass"
+#   Identifier "mytouchpad"
+#   Driver "libinput"
+#   MatchIsTouchpad "on"
+#   NaturalScrolling "true"
+#EndSection
