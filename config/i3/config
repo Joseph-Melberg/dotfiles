@@ -238,7 +238,7 @@ exec xinput set-prop "Elan Touchpad" "libinput Tapping Enabled" 1
 
 
 
-exec feh --bg-scale ~/Firefox_wallpaper.png
+exec sudo feh --bg-scale ~/Firefox_wallpaper.png
 
 exec xterm*faceSize: 3
 exec_always compton -f
