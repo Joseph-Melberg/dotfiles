@@ -11,3 +11,8 @@ sudo ln usr/40-libinput.conf /usr/share/X11/xorg.conf.d/40-libinput.conf
 
 #Kitty
 ln config/kitty/kitty.conf ~/.config/kitty/kitty.conf
+
+
+#etc
+
+sudo ln etc/X11/xorg.conf.d/20-intel.conf /etc/X11/xorg.conf.d/

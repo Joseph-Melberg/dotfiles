@@ -210,6 +210,7 @@ smart_gaps on
 # Activate smart borders (always)
 #smart_borders on
 
+
 ##============================================================================##
 #                        *** Lock specific settings ***                        #
 ##============================================================================##
@@ -224,8 +225,8 @@ bindsym $mod+shift+x exec i3lock
 #                     *** Brightness specific settings ***                     #
 ##============================================================================##
 
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec sudo xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec sudo xbacklight -dec 10
 
 ##============================================================================##
 #                      *** Hardware specific settings ***                      #
@@ -238,7 +239,9 @@ exec xinput set-prop "Elan Touchpad" "libinput Tapping Enabled" 1
 
 
 
-exec sudo feh --bg-scale ~/Firefox_wallpaper.png
+exec feh --bg-scale ~/Downloads/windarch.png
+
+# WRITE SCREEN SHOT UTIL
 
 exec xterm*faceSize: 3
-exec_always compton -f
+exec_always compton -f --vsync --refresh-rate 60
