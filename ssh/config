@@ -1,6 +1,14 @@
 Host tool
 	ProxyJump centurionx
 	Hostname 10.0.0.144
-Host centurionx
-	Hostname centurionx.net
 
+Host centurionx
+	Hostname ssh.centurionx.net
+
+Host jump
+	Hostname jump.centurionx.net
+
+Host speed
+	ProxyJump jump
+	Hostname localhost
+	Port 9001

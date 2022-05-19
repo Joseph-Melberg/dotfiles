@@ -148,3 +148,8 @@ fi
 if [ -f /home/jbmelberg/.config/synth-shell/better-history.sh ] && [ -n "$( echo $- | grep i )" ]; then
 	source /home/jbmelberg/.config/synth-shell/better-history.sh
 fi
+
+##-----------------------------------------------------
+## Battery warning
+export PATH="/home/jbmelberg/Git/i3-battery-popup:$PATH"
+
