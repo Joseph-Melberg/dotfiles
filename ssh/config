@@ -12,3 +12,58 @@ Host speed
 	ProxyJump jump
 	Hostname localhost
 	Port 9001
+Host 10.0.0.248
+	HostName 10.0.0.248
+
+Host speed
+	HostName 10.0.0.3
+	ProxyJump centurionx
+
+Host bird
+	HostName localhost
+	ProxyJump jump
+ 	Port 7103
+        User pi
+
+Host tool
+	ProxyJump centurionx
+	HostName 10.0.0.144
+
+Host centurionx
+	HostName ssh.centurionx.net
+
+Host center4
+	HostName 10.0.0.215
+	ProxyJump centurionx
+        
+
+Host jump
+	HostName jump.centurionx.net
+
+
+Host rodger
+	ProxyJump jump
+	HostName localhost
+        Port 7106
+        User pi
+
+Host stacy
+	ProxyJump jump
+	HostName localhost
+	Port 7104
+ 	User pi
+
+Host melberg
+	ProxyJump jump
+	HostName localhost
+        Port 7109
+        User pi
+
+Host base
+	ProxyJump centurionx
+	HostName 10.0.0.4
+
+Host newDev
+	ProxyJump centurionx
+	HostName 10.0.0.249
+	User jbmelberg
